@@ -31,5 +31,5 @@ echo "No old application instance running"
 fi
 
 echo "Starting application"
-nohup java -jar /opt/ita-final/ita-final-0.0.1-SNAPSHOT.jar > lot.txt 2>&1 &
+nohup java -jar build/libs/todolist-0.0.1-SNAPSHOT.jar > lot.txt 2>&1 &
 echo "Application start successfully"
