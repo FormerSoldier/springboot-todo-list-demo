@@ -9,8 +9,8 @@ else
   exit 1
 fi
 
-#git fetch --all
-#git reset --hard origin/master
+git fetch --all
+git reset --hard origin/master
 
 echo "Gradle building..."
 gradle clean build
