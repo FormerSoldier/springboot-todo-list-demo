@@ -12,6 +12,12 @@ logging:
 #  #    table: schema_version
 #  datasource:
 #    url: jdbc:h2:file:./h2/org
+Spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+  url: jdbc:mysql://{SERVER}/{DB_NAME}?useUnicode=true&useSSL=false
+  username: {USERNAME}
+  password: {PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
