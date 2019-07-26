@@ -19,9 +19,7 @@ public class TodoListApplicationTests {
 	TodoRepository todoRepository;
 	@Test
 	public void contextLoads() {
-		List<TodoItem> todoItems = todoRepository.findAll();
-
-		Assertions.assertNotNull(todoItems);
+		
 	}
 
 }

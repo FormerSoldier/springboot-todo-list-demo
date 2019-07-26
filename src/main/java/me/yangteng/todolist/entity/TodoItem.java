@@ -16,7 +16,7 @@ import javax.validation.constraints.NotNull;
 import java.time.Instant;
 
 @Entity
-//@Data
+@Data
 public class TodoItem {
     @Id
     @GeneratedValue(generator = "uuid")
@@ -26,7 +26,7 @@ public class TodoItem {
     @NotNull
     @Column
     private String value;
-/*
+
     @Column
     @CreationTimestamp
     private Instant createTime;
@@ -38,25 +38,5 @@ public class TodoItem {
     @NotNull
     @Column(columnDefinition = "BOOLEAN DEFAULT FALSE")
     private boolean finished;
-    */
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
-
-    public TodoItem(@NotNull String value) {
-        this.value = value;
-    }
 }
