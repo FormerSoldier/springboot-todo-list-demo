@@ -6,12 +6,12 @@ logging:
         web: DEBUG
       hibernate: ERROR
 
-spring:
-  #  flyway:
-  #    enabled: true
-  #    table: schema_version
-  datasource:
-    url: jdbc:h2:file:./h2/org
+#spring:
+#  #  flyway:
+#  #    enabled: true
+#  #    table: schema_version
+#  datasource:
+#    url: jdbc:h2:file:./h2/org
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,7 +20,6 @@ spring:
   h2:
     console:
       enabled: true
-
 
 server:
   port: 8088
