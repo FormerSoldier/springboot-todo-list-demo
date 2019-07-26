@@ -40,7 +40,7 @@ public class TodoService implements BaseService<TodoItem, String> {
     public Page<TodoItem> findAll(Pageable pageable) {
         return todoRepository.findAll(pageable);
     }
-
+/*
     public TodoItem toggleFinished(String id) {
         return todoRepository.findById(id)
                 .map(todoItem -> {
@@ -48,5 +48,5 @@ public class TodoService implements BaseService<TodoItem, String> {
                     return todoRepository.save(todoItem);
                 })
                 .orElseThrow(() -> new RuntimeException("Todo item not found"));
-    }
+    }*/
 }

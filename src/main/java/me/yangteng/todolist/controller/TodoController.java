@@ -48,9 +48,9 @@ public class TodoController implements BaseController<TodoItem, String> {
     public TodoItem findById(String s) throws Exception {
         return todoService.findById(s).orElseThrow(() -> new RuntimeException("Todo item not found"));
     }
-
+/*
     @PutMapping("/{id}/finished")
     public TodoItem toggleFinished(@PathVariable String id){
         return todoService.toggleFinished(id);
-    }
+    }*/
 }

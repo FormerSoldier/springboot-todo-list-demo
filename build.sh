@@ -30,6 +30,6 @@ else
 echo "No old application instance running"
 fi
 
-echo "Starting application"
-nohup java -jar build/libs/todolist-0.0.1-SNAPSHOT.jar > logfile 2>&1 &
-echo "Application start successfully"
+#echo "Starting application"
+#nohup java -jar build/libs/todolist-0.0.1-SNAPSHOT.jar > logfile 2>&1 &
+#echo "Application start successfully"
